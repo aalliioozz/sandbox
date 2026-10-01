@@ -4,11 +4,11 @@ run-name: Run of the simple workflow
 
 on:
   # Workflow run trigger events
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
-  # Manually trigger workflow run
+  # push:
+  #   branches: ["main"]
+  # pull_request:
+  #   branches: ["main"]
+  # # Manually trigger workflow run
   workflow_dispatch:
 
 jobs:
