@@ -17,6 +17,8 @@ jobs:
           # Exit if the run number is greater than the maximum number of attempts
           if [ $RUN_ATTEMPT_NUMBER -gt $MAXIMUM_ATTEMPTS ]; then
             echo "Exiting because the run number is greater than the maximum number of attempts"
+            echo "RUN_ATTEMPT_NUMBER=$RUN_ATTEMPT_NUMBER"
+            echo "MAXIMUM_ATTEMPTS=$MAXIMUM_ATTEMPTS"
             exit 1
           fi
         # Add your solution below this line
