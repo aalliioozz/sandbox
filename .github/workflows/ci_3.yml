@@ -9,7 +9,8 @@ jobs:
     
     env: 
      RUN_ATTEMPT_NUMBER: ${{github.run_attempt}}
-     MAXIMUM_ATTEMPTS: ${{vars.MAXIMUM_ATTEMPTS}}
+     # MAXIMUM_ATTEMPTS: ${{vars.MAXIMUM_ATTEMPTS}}
+     MAXIMUM_ATTEMPTS : 2
     
     steps:
       - name: Prevent reruns
