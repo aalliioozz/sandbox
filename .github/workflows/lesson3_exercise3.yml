@@ -58,14 +58,6 @@ jobs:
         with:
             path: primes.txt
             key: primes-${{ hashFiles('primes.txt') }}
-            
-      - name: Store the generated primes as an artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: primes
-          path: primes.txt
-
-    
 
       - name: Store the generated primes as an artifact
         uses: actions/upload-artifact@v4
