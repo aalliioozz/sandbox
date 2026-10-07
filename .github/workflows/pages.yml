@@ -16,7 +16,7 @@ jobs:
 
 environment:
   name: github-pages
-  url: ${{steps.deployment.outputs.page_url}}concurrency: 
+  url: ${{steps.deployment.outputs.page_url}}: 
 
 steps:
   - name: Chekout
